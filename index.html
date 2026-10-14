@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nandi.wang</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f8fa;
+            color: #1f2328;
+            font: 16px/1.6 Inter, -apple-system, "Segoe UI", system-ui, sans-serif;
+        }
+
+        .panel {
+            background: #ffffff;
+            border: 1px solid #d1d9e0;
+            border-radius: 12px;
+            padding: 36px 40px;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(31, 35, 40, 0.06);
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            letter-spacing: -0.01em;
+            margin: 0 0 8px;
+        }
+
+        p {
+            margin: 0 0 20px;
+            color: #59636e;
+            font-size: 0.95rem;
+        }
+
+        a {
+            display: inline-block;
+            padding: 9px 18px;
+            border-radius: 6px;
+            background: #0969da;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            filter: brightness(1.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #0d1117;
+                color: #e4e4e6;
+            }
+
+            .panel {
+                background: #161b22;
+                border-color: #30363d;
+                box-shadow: none;
+            }
+
+            p {
+                color: #9198a1;
+            }
+
+            a {
+                background: #4cb6e8;
+                color: #0d1117;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="panel">
+    <h1>AvCharts</h1>
+    <p>A charting library for Avalonia, with the gallery running in a browser.</p>
+    <!-- Relative, so that the link is as reachable as this page is: over http until the certificate lands, over
+         https afterwards, and at whatever host the domain ends up pointing at. -->
+    <a href="av-charts/">Open av-charts</a>
+</div>
+</body>
+
+</html>

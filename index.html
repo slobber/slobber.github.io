@@ -21,12 +21,19 @@
             font: 16px/1.6 Inter, -apple-system, "Segoe UI", system-ui, sans-serif;
         }
 
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: min(920px, calc(100vw - 40px));
+            padding: 32px 0;
+        }
+
         .panel {
             background: #ffffff;
             border: 1px solid #d1d9e0;
             border-radius: 12px;
             padding: 36px 40px;
-            max-width: 420px;
             text-align: center;
             box-shadow: 0 8px 24px rgba(31, 35, 40, 0.06);
         }
@@ -82,13 +89,19 @@
 </head>
 
 <body>
-<div class="panel">
-    <h1>AvCharts</h1>
-    <p>A charting library for Avalonia, with the gallery running in a browser.</p>
-    <!-- Relative, so that the link is as reachable as this page is: over http until the certificate lands, over
-         https afterwards, and at whatever host the domain ends up pointing at. -->
-    <a href="av-charts/">Open av-charts</a>
-</div>
+<main class="projects">
+    <section class="panel">
+        <h1>AvCharts</h1>
+        <p>A charting library for Avalonia, with the gallery running in a browser.</p>
+        <a href="av-charts/">Open av-charts</a>
+    </section>
+
+    <section class="panel">
+        <h1>World Flags Swatch</h1>
+        <p>240 country and region flags in a fan-style swatch book, with printable single-card pages.</p>
+        <a href="WorldFlagSwatch/">Open World Flags Swatch</a>
+    </section>
+</main>
 </body>
 
 </html>
